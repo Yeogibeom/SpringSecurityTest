@@ -21,4 +21,9 @@ public class MemberController {
         memberService.getregister(member);
         return ResponseEntity.ok().build();
     }
+
+    @PostMapping("/login")
+    public ResponseEntity<Object> login(@RequestBody Member member) {
+
+    }
 }
