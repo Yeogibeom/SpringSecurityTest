@@ -33,6 +33,10 @@ dependencies {
     testImplementation 'org.springframework.security:spring-security-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'org.mariadb.jdbc:mariadb-java-client:3.3.3'
+    // jwt 토큰
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.5'
+    implementation 'io.jsonwebtoken:jjwt-gson:0.12.5'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.12.5'
 }
 
 tasks.named('test') {
